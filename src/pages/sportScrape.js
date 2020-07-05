@@ -40,7 +40,9 @@ const SportScrape = () => {
             <h5 className="mb-1">{article.title}</h5>
           </div>
           <p className="mb-1">{article.desc}</p>
-          <small>{article.url}</small>
+          <a href={"https://www.nytimes.com" + article.url} target="_blank">
+              View Article
+            </a>
         </MDBListGroup>
       ))}
     </MDBContainer>
