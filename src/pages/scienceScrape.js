@@ -2,12 +2,13 @@ import React, { useState, useEffect } from "react";
 import { MDBListGroup, MDBContainer } from "mdbreact";
 import "../static/tech.css";
 import NavbarPage from "../components/navBar";
+import settings from "../config/configData";
 
 const ScienceScrape = () => {
   const [articles, setArticles] = useState([]);
   const fetchTechData = () => {
     fetch(
-      "https://ez0rksfmi0.execute-api.us-east-1.amazonaws.com/dev/api/news/science",
+      `${settings.apiBaseUrl}/dev/api/news/science`,
       {
         method: "GET",
       }

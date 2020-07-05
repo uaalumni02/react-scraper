@@ -4,12 +4,13 @@ import React, { useState, useEffect } from "react";
 import { MDBListGroup, MDBContainer } from "mdbreact";
 import "../static/sport.css";
 import NavbarPage from "../components/navBar";
+import settings from "../config/configData";
 
 const SportScrape = () => {
   const [articles, setArticles] = useState([]);
   const fetchTechData = () => {
     fetch(
-      "https://ez0rksfmi0.execute-api.us-east-1.amazonaws.com/dev/api/news/sports",
+      `${settings.apiBaseUrl}/dev/api/news/sports`,
       {
         method: "GET",
       }
