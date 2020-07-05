@@ -41,12 +41,10 @@ class NavbarPage extends Component {
                 <MDBNavLink  to={"/"}>Tech</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to={"/"}>Sports</MDBNavLink>
+                <MDBNavLink to={"/sports"}>Sports</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink exact to={"/"} onClick={this.logOut}>
-                  Log Out
-                </MDBNavLink>
+                <MDBNavLink to={"/science"}>Science</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>

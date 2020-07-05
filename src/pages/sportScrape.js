@@ -2,15 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import { MDBListGroup, MDBContainer } from "mdbreact";
-import "../static/tech.css";
+import "../static/sport.css";
 import NavbarPage from "../components/navBar";
 
-const TechScrape = () => {
+const SportScrape = () => {
   const [articles, setArticles] = useState([]);
   const fetchTechData = () => {
-    //figure our way to hide url
     fetch(
-      "https://ez0rksfmi0.execute-api.us-east-1.amazonaws.com/dev/api/news/tech",
+      "https://ez0rksfmi0.execute-api.us-east-1.amazonaws.com/dev/api/news/sports",
       {
         method: "GET",
       }
@@ -49,4 +48,4 @@ const TechScrape = () => {
   );
 };
 
-export default TechScrape;
+export default SportScrape;

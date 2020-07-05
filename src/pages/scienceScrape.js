@@ -5,12 +5,11 @@ import { MDBListGroup, MDBContainer } from "mdbreact";
 import "../static/tech.css";
 import NavbarPage from "../components/navBar";
 
-const TechScrape = () => {
+const ScienceScrape = () => {
   const [articles, setArticles] = useState([]);
   const fetchTechData = () => {
-    //figure our way to hide url
     fetch(
-      "https://ez0rksfmi0.execute-api.us-east-1.amazonaws.com/dev/api/news/tech",
+      "https://ez0rksfmi0.execute-api.us-east-1.amazonaws.com/dev/api/news/science",
       {
         method: "GET",
       }
@@ -49,4 +48,4 @@ const TechScrape = () => {
   );
 };
 
-export default TechScrape;
+export default ScienceScrape;
