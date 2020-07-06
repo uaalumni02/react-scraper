@@ -1,8 +1,5 @@
 .articles {
-    width: 18rem;
-    display: inline-block;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    float: left;
 }
 .articleContainer {
     margin-top: 125px;
@@ -10,4 +7,8 @@
 
 .logo {
     margin-bottom: 50px;
+}
+
+.imageContainer {
+    margin-top: 150px;
 }

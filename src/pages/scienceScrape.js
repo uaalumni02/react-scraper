@@ -34,7 +34,7 @@ const ScienceScrape = () => {
           </header>
         </center>
         {articles.map((article) => (
-          <MDBListGroup className="articles" style={{ width: "22rem" }}>
+          <MDBListGroup className="articles" >
             <div className="d-flex w-100 justify-content-between">
               <h5 className="mb-1">{article.title}</h5>
             </div>
